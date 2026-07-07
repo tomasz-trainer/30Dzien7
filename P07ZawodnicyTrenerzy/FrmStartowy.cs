@@ -1,6 +1,8 @@
 ﻿using P06Zawodnicy.Shared.Domain;
 using P06Zawodnicy.Shared.Services;
+using PdfSharp.Pdf.IO;
 using System;
+using System.IO;
 using System.Windows.Forms;
 
 namespace P07ZawodnicyTrenerzy
@@ -18,8 +20,46 @@ namespace P07ZawodnicyTrenerzy
             lbDane.DataSource = 
                 mz.WczytajZawodnikow();
            
-            cbKraje.DataSource = mz.PodajKraje();
+            string[] kraje = mz.PodajKraje();
+            cbKraje.DataSource = kraje;
 
+            generujObrazkiKrajow(kraje);
+        }
+
+        private void generujObrazkiKrajow(string[] kraje)
+        {
+            string folderFlagi = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "flagi");
+
+            for (int i = 0; i < kraje.Length; i++)
+            {
+                string sciezka = Path.Combine(folderFlagi, kraje[i] + ".png");
+                if (File.Exists(sciezka))
+                {
+                    PictureBox pc = new PictureBox()
+                    {
+                        Name = "pb" + kraje[i],
+                        Size = new System.Drawing.Size(50, 30),
+                        Location = new System.Drawing.Point(10 + i * 60, 10),
+                        ImageLocation = sciezka,
+                        SizeMode = PictureBoxSizeMode.StretchImage,
+                        Cursor = Cursors.Hand,
+                        Tag = kraje[i]
+
+                    };
+                    pc.Click += flaga_Click;
+
+                    pnlFlagi.Controls.Add(pc);
+                }
+            }
+
+        }
+
+        private void flaga_Click(object sender, EventArgs e)
+        {
+            // musimy odczytać która flaga została kliknieta 
+            PictureBox kliknietyObrazek = (PictureBox)sender;
+
+            cbKraje.SelectedItem = kliknietyObrazek.Tag;
         }
 
         private void btnSzczegoly_Click(object sender, EventArgs e)

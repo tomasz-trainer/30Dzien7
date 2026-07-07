@@ -169,12 +169,24 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="flagi\at.png" />
-    <Content Include="flagi\de.png" />
-    <Content Include="flagi\fi.png" />
-    <Content Include="flagi\no.png" />
-    <Content Include="flagi\pl.png" />
-    <Content Include="flagi\us.png" />
+    <Content Include="flagi\AUT.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="flagi\GER.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="flagi\FIN.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="flagi\NOR.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="flagi\POL.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="flagi\USA.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
