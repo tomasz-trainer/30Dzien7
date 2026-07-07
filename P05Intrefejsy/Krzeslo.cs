@@ -6,10 +6,19 @@ using System.Threading.Tasks;
 
 namespace P05Intrefejsy
 {
-    internal class Krzeslo: IComparable
+    internal class Krzeslo: IComparable, ICloneable
     {
         public string Firma { get; set; }   
         public int Waga { get; set; }
+
+        public object Clone()
+        {
+            return new Krzeslo
+            {
+                Firma = this.Firma.ToUpper(),
+                Waga = this.Waga,
+            };
+        }
 
         public int CompareTo(object obj)
         {
