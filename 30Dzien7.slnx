@@ -7,4 +7,5 @@
   <Project Path="P06Zawodnicy.Shared/P06Zawodnicy.Shared.csproj" />
   <Project Path="P07ZawodnicyTrenerzy/P07ZawodnicyTrenerzy.csproj" />
   <Project Path="P08PolaczenieZBaza/P08PolaczenieZBaza.csproj" />
+  <Project Path="P09PobieraczFlag/P09PobieraczFlag.csproj" />
 </Solution>
