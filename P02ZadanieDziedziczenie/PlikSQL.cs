@@ -17,7 +17,13 @@ namespace P02ZadanieDziedziczenie
         public override void Zapisz()
         {
             Zawartosc = $"SELECT {Zawartosc} from Dane";
-            File.WriteAllText(Sciezka + "\\" + Nazwa + rozszerzenie, Zawartosc);
+            // File.WriteAllText(Sciezka + "\\" + Nazwa + rozszerzenie, Zawartosc);
+            base.Zapisz();
+        }
+
+        public override string ToString()
+        {
+            return Nazwa + " " + rozszerzenie;
         }
     }
 }

@@ -10,7 +10,7 @@ namespace P02ZadanieDziedziczenie
     //c# access modifiers
     // https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers
 
-    internal class Raport
+    internal abstract class Raport
     {
         public string Zawartosc { get; set; }
         public int Rozmiar { get; set; }

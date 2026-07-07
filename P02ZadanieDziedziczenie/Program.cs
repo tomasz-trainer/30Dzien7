@@ -33,6 +33,28 @@ namespace P02ZadanieDziedziczenie
                 r.Zapisz();
             }
 
+
+            // gdy mamy klasę A i B, Klasa A : B 
+            // ovverride - użyj metody z klasy A 
+            // new - użyj metody z klasy B 
+
+            object o = new object();
+           
+
+            PlikSQL p = new PlikSQL();
+            p.ToString();
+
+            int unikalneId = p.GetHashCode();
+
+            object o1 = new PlikSQL();
+            object o2 = new PlikHTML();
+            object o3 = new PlikCSV();
+
+            o.Equals(o1);
+
+
+            //Raport r = new Raport();
+
         }
     }
 }
