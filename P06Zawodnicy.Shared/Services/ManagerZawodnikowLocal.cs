@@ -8,12 +8,13 @@ using System.Threading.Tasks;
 
 namespace P06Zawodnicy.Shared.Services
 {
-    public class ManagerZawodnikowLocal
+    public class ManagerZawodnikowLocal : IManagerZawodnikow
     {
         private List<Zawodnik> zawodnicyCache;
-        private string sciezka;
+        private string sciezka = @"C:\dane\Zawodnicy.txt";
 
-        public Zawodnik[] WczytajZawodnikow(string sciezka)
+ 
+        public Zawodnik[] WczytajZawodnikow()
         {
             this.sciezka = sciezka;
             //string[] wiersze = File.ReadAllText(sciezka).Split(new string[1] {"\r\n"},StringSplitOptions.RemoveEmptyEntries);
@@ -172,6 +173,13 @@ namespace P06Zawodnicy.Shared.Services
                 sb.AppendLine(wiersz);
             }
             File.WriteAllText(sciezka, sb.ToString(),Encoding.UTF8);
+        }
+
+
+
+        public int PodajSredniWiekZawodnikow(string kraj)
+        {
+            throw new NotImplementedException();
         }
     }
 }

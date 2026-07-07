@@ -7,7 +7,7 @@ namespace P07ZawodnicyTrenerzy
 {
     public partial class FrmStartowy : Form
     {
-        ManagerZawodnikow mz;
+        IManagerZawodnikow mz;
         public FrmStartowy()
         {
 

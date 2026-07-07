@@ -21,7 +21,7 @@ namespace P07ZawodnicyTrenerzy
 
     public partial class FrmSzczegoly : Form
     {
-        ManagerZawodnikow mz;
+        IManagerZawodnikow mz;
         TrybOkna trybOkna;
         Zawodnik zawodnik;
         FrmStartowy frmStartowy;
@@ -32,7 +32,7 @@ namespace P07ZawodnicyTrenerzy
         /// <param name="trybOkna">Określa tryb okna</param>
         /// <param name="mz">Manager do zarządzania bazą</param>
         /// <param name="frmStartowy">Referencja do formularza bazowego</param>
-        public FrmSzczegoly(TrybOkna trybOkna, ManagerZawodnikow mz, FrmStartowy frmStartowy) 
+        public FrmSzczegoly(TrybOkna trybOkna, IManagerZawodnikow mz, FrmStartowy frmStartowy) 
         {
             InitializeComponent();
             this.trybOkna = trybOkna;
@@ -50,7 +50,7 @@ namespace P07ZawodnicyTrenerzy
         /// <param name="mz">Manager do zarządzania bazą</param>
         /// <param name="frmStartowy">Referencja do formularza bazowego</param>
         /// <param name="zawodnik">Zawodnik do edycji</param>
-        public FrmSzczegoly(TrybOkna trybOkna, ManagerZawodnikow mz, FrmStartowy frmStartowy, Zawodnik zawodnik) : this(trybOkna, mz, frmStartowy)
+        public FrmSzczegoly(TrybOkna trybOkna, IManagerZawodnikow mz, FrmStartowy frmStartowy, Zawodnik zawodnik) : this(trybOkna, mz, frmStartowy)
         {
             //this.trybOkna = trybOkna;
             //this.frmStartowy = frmStartowy;

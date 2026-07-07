@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace P06Zawodnicy.Shared.Services
 {
-    public class ManagerZawodnikow
+    public class ManagerZawodnikow : IManagerZawodnikow
     {
         //PolaczenieZBaza pzb;
         //public ManagerZawodnikow()
