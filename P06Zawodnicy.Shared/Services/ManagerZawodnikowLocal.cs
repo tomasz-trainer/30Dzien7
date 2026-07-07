@@ -16,7 +16,7 @@ namespace P06Zawodnicy.Shared.Services
  
         public Zawodnik[] WczytajZawodnikow()
         {
-            this.sciezka = sciezka;
+           // this.sciezka = sciezka;
             //string[] wiersze = File.ReadAllText(sciezka).Split(new string[1] {"\r\n"},StringSplitOptions.RemoveEmptyEntries);
             string[] wiersze =  File.ReadAllLines(sciezka);
 

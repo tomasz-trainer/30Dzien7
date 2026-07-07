@@ -35,6 +35,7 @@
             this.btnOdswiez = new System.Windows.Forms.Button();
             this.btnGenerujPDF = new System.Windows.Forms.Button();
             this.btnSredniWiek = new System.Windows.Forms.Button();
+            this.pnlFlagi = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // lbDane
@@ -104,11 +105,19 @@
             this.btnSredniWiek.UseVisualStyleBackColor = true;
             this.btnSredniWiek.Click += new System.EventHandler(this.btnSredniWiek_Click);
             // 
+            // pnlFlagi
+            // 
+            this.pnlFlagi.Location = new System.Drawing.Point(12, 276);
+            this.pnlFlagi.Name = "pnlFlagi";
+            this.pnlFlagi.Size = new System.Drawing.Size(368, 82);
+            this.pnlFlagi.TabIndex = 16;
+            // 
             // FrmStartowy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(392, 262);
+            this.ClientSize = new System.Drawing.Size(392, 370);
+            this.Controls.Add(this.pnlFlagi);
             this.Controls.Add(this.btnSredniWiek);
             this.Controls.Add(this.btnGenerujPDF);
             this.Controls.Add(this.btnOdswiez);
@@ -131,6 +140,7 @@
         private System.Windows.Forms.Button btnOdswiez;
         private System.Windows.Forms.Button btnGenerujPDF;
         private System.Windows.Forms.Button btnSredniWiek;
+        private System.Windows.Forms.Panel pnlFlagi;
     }
 }
 

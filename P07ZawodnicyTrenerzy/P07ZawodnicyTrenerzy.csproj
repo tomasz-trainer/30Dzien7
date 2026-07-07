@@ -168,5 +168,13 @@
       <Name>P06Zawodnicy.Shared</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="flagi\at.png" />
+    <Content Include="flagi\de.png" />
+    <Content Include="flagi\fi.png" />
+    <Content Include="flagi\no.png" />
+    <Content Include="flagi\pl.png" />
+    <Content Include="flagi\us.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
