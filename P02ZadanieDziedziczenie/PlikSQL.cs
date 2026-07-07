@@ -14,7 +14,7 @@ namespace P02ZadanieDziedziczenie
             rozszerzenie = ".sql";
         }
 
-        public void Zapisz()
+        public override void Zapisz()
         {
             Zawartosc = $"SELECT {Zawartosc} from Dane";
             File.WriteAllText(Sciezka + "\\" + Nazwa + rozszerzenie, Zawartosc);

@@ -13,7 +13,7 @@ namespace P02ZadanieDziedziczenie
         {
             rozszerzenie = ".csv";
         }
-        public void Zapisz()
+        public override void Zapisz()
         {
             Zawartosc = Zawartosc.Replace(" ", ",");
             File.WriteAllText(Sciezka + "\\" + Nazwa + rozszerzenie, Zawartosc);

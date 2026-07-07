@@ -18,15 +18,21 @@ namespace P02ZadanieDziedziczenie
 
             };
 
-            foreach (var p in raporty)
+            //foreach (var p in raporty)
+            //{
+            //    if (p is PlikCSV)
+            //        ((PlikCSV)p).Zapisz();
+            //    else if (p is PlikHTML)
+            //        ((PlikHTML)p).Zapisz();
+            //    else if (p is PlikSQL)
+            //        ((PlikSQL)p).Zapisz();
+            //}
+
+            foreach (var r in raporty)
             {
-                if (p is PlikCSV)
-                    ((PlikCSV)p).Zapisz();
-                else if (p is PlikHTML)
-                    ((PlikHTML)p).Zapisz();
-                else if (p is PlikSQL)
-                    ((PlikSQL)p).Zapisz();
+                r.Zapisz();
             }
+
         }
     }
 }

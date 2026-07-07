@@ -20,11 +20,10 @@ namespace P02ZadanieDziedziczenie
                                 </body>
                                 </html>";
 
-        public void Zapisz()
+        public override void Zapisz()
         {
             Zawartosc = string.Format(szablon, Zawartosc);
             File.WriteAllText(Sciezka + "\\" + Nazwa + rozszerzenie, Zawartosc);
-
         }
     }
 }
