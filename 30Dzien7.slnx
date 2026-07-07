@@ -4,4 +4,7 @@
   <Project Path="P03Interfejsy/P03Interfejsy.csproj" />
   <Project Path="P04Intrefejsy/P04Intrefejsy.csproj" />
   <Project Path="P05Intrefejsy/P05Intrefejsy.csproj" />
+  <Project Path="P06Zawodnicy.Shared/P06Zawodnicy.Shared.csproj" />
+  <Project Path="P07ZawodnicyTrenerzy/P07ZawodnicyTrenerzy.csproj" />
+  <Project Path="P08PolaczenieZBaza/P08PolaczenieZBaza.csproj" />
 </Solution>
