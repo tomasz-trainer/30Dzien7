@@ -3,4 +3,5 @@
   <Project Path="P02ZadanieDziedziczenie/P02ZadanieDziedziczenie.csproj" />
   <Project Path="P03Interfejsy/P03Interfejsy.csproj" />
   <Project Path="P04Intrefejsy/P04Intrefejsy.csproj" />
+  <Project Path="P05Intrefejsy/P05Intrefejsy.csproj" />
 </Solution>
