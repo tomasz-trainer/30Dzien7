@@ -35,8 +35,11 @@ namespace P02ZadanieDziedziczenie
 
 
             // gdy mamy klasę A i B, Klasa A : B 
-            // ovverride - użyj metody z klasy A 
-            // new - użyj metody z klasy B 
+            // ovverride - użyj metody z klasy A (jeśli mamy na to pozwolenie - zapisane jako virtual w klasie B)
+            // new - użyj metody z klasy B (domyslne działanie)
+
+            // this - odwołanie do samego siebie 
+            // base - odowładnie do klasy po której dziedziczę
 
             object o = new object();
            
