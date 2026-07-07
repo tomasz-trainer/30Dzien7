@@ -129,6 +129,13 @@
     <Compile Include="FrmSzczegoly.Designer.cs">
       <DependentUpon>FrmSzczegoly.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmWyszukiwarka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWyszukiwarka.Designer.cs">
+      <DependentUpon>FrmWyszukiwarka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectContainer.cs" />
     <Compile Include="PDFManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -137,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSzczegoly.resx">
       <DependentUpon>FrmSzczegoly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWyszukiwarka.resx">
+      <DependentUpon>FrmWyszukiwarka.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -187,6 +197,7 @@
     <Content Include="flagi\USA.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="zadanie.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

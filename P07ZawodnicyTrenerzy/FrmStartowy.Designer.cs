@@ -36,6 +36,7 @@
             this.btnGenerujPDF = new System.Windows.Forms.Button();
             this.btnSredniWiek = new System.Windows.Forms.Button();
             this.pnlFlagi = new System.Windows.Forms.Panel();
+            this.btnWyszukiwarka = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbDane
@@ -112,11 +113,22 @@
             this.pnlFlagi.Size = new System.Drawing.Size(368, 82);
             this.pnlFlagi.TabIndex = 16;
             // 
+            // btnWyszukiwarka
+            // 
+            this.btnWyszukiwarka.Location = new System.Drawing.Point(295, 201);
+            this.btnWyszukiwarka.Name = "btnWyszukiwarka";
+            this.btnWyszukiwarka.Size = new System.Drawing.Size(75, 23);
+            this.btnWyszukiwarka.TabIndex = 17;
+            this.btnWyszukiwarka.Text = "Wyszukiwarka";
+            this.btnWyszukiwarka.UseVisualStyleBackColor = true;
+            this.btnWyszukiwarka.Click += new System.EventHandler(this.btnWyszukiwarka_Click);
+            // 
             // FrmStartowy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(392, 370);
+            this.Controls.Add(this.btnWyszukiwarka);
             this.Controls.Add(this.pnlFlagi);
             this.Controls.Add(this.btnSredniWiek);
             this.Controls.Add(this.btnGenerujPDF);
@@ -141,6 +153,7 @@
         private System.Windows.Forms.Button btnGenerujPDF;
         private System.Windows.Forms.Button btnSredniWiek;
         private System.Windows.Forms.Panel pnlFlagi;
+        private System.Windows.Forms.Button btnWyszukiwarka;
     }
 }
 

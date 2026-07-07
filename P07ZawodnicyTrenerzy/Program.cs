@@ -14,6 +14,7 @@ namespace P07ZawodnicyTrenerzy
         [STAThread]
         static void Main()
         {
+            new ObjectContainer();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmStartowy());

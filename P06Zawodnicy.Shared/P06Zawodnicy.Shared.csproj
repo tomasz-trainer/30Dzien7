@@ -41,12 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\Osoba.cs" />
+    <Compile Include="Domain\Terner.cs" />
     <Compile Include="Services\IManagerZawodnikow.cs" />
+    <Compile Include="Services\ManagerTrenerow.cs" />
     <Compile Include="Services\ManagerZawodnikowAPI.cs" />
     <Compile Include="Services\ManagerZawodnikowLocal.cs" />
     <Compile Include="Services\ManagerZawodnikow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Domain\Zawodnik.cs" />
+    <Compile Include="Services\Wyszukiwarka.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\P08PolaczenieZBaza\P08PolaczenieZBaza.csproj">

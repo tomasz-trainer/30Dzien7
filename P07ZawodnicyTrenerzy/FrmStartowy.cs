@@ -126,5 +126,21 @@ namespace P07ZawodnicyTrenerzy
             int sredniWiek = mz.PodajSredniWiekZawodnikow(wybranyKraj);
             MessageBox.Show($"Średni wiek zawodnikow z kraju {wybranyKraj}: {sredniWiek}");
         }
+
+        FrmWyszukiwarka frmWyszukiwarka;
+        private void btnWyszukiwarka_Click(object sender, EventArgs e)
+        {
+            if (frmWyszukiwarka != null)
+            {
+                frmWyszukiwarka.BringToFront();
+            }
+            else
+            {
+                frmWyszukiwarka = new FrmWyszukiwarka();
+                frmWyszukiwarka.Show();
+            }
+           // FrmWyszukiwarka frmWyszukiwarka = new FrmWyszukiwarka();
+           // frmWyszukiwarka.Show();
+        }
     }
 }
